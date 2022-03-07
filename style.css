@@ -479,6 +479,47 @@ footer>* {
 }
 
 
+/* ------------------ shop page -----------------------*/
+
+.product-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.product-cart a {
+    width: fit-content;
+    background-color: var(--dark-green);
+    border: none;
+    color: var(--white);
+    padding: 10px 17px;
+    text-align: center;
+    text-decoration: none;
+    /* font-size: 11px; */
+    cursor: pointer;
+}
+
+.soap-image {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ------------------ SHOP PAGE -----------------------*/
+
+#product-container {
+    max-width: 100%;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 400px));
+}
+
+#product-container>* {
+    padding: var(--p);
+}
+
+
 /* ------------------ Tablet -----------------------*/
 
 
