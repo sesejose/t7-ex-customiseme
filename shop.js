@@ -31,6 +31,6 @@ function showSoap(soap) {
                               ".soap-image"
                           ).src = `http://gareth.dk/data/${soap.id}.jpeg`; */
   copy.querySelector("a").setAttribute("href", `product.html?id=${soap._id}`);
-  const parent = document.querySelector("main");
+  const parent = document.querySelector("#shop-grid");
   parent.appendChild(copy);
 }

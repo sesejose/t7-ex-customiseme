@@ -31,7 +31,8 @@
   --mb: 0 0 1rem 0;
   --mt: 1rem 0 0 0;
   --ptb: 1rem 0;
-  --ptb-xxl: 6rem 0;
+  --ptb-large: 6rem 0;
+  --ptb-medium: 3rem 0;
   --plr: 0 1rem;
   --pl: 0 0 0 1rem;
   --pr: 0 1rem 0 0;
@@ -43,9 +44,11 @@
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: var(--font-h);
   line-height: normal;
+  margin: var(--mb);
 }
 
 p {
@@ -62,6 +65,10 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.125rem;
 }
 
 body {
@@ -291,14 +298,14 @@ a.b-links:active {
 }
 
 section {
-  padding: var(--ptb-xxl);
+  padding: var(--ptb-medium);
 }
 
 section h2 {
   margin-bottom: 2rem;
 }
 
-/**********************************/
+/****************  Mobile - Section Shampoos, Soaps, Lips ******************/
 
 #products {
   background-color: var(--green);
@@ -344,7 +351,7 @@ a.pro-home:hover {
   max-width: 100%;
 }
 
-/***********************************/
+/*****************  Mobile Section Create Soap Home  ******************/
 
 .create-soap-home {
   display: flex;
@@ -365,7 +372,8 @@ a.pro-home:hover {
   width: 100%;
 }
 
-/********************************************/
+/******************   Workshops Home   **************************/
+
 #workshops {
   background-image: url(images/soap.png);
   background-position: center;
@@ -399,7 +407,7 @@ a.pro-home:hover {
   text-align: center;
 }
 
-/************************************/
+/*******************  Mobile Instagram Home  *****************/
 
 .insta-social {
   display: flex;
@@ -424,21 +432,28 @@ a.pro-home:hover {
   margin: 0 auto;
 }
 
-/*********************************************/
-
-/*** Mobile ****/
+/******************  Mobile CReate Soap - Custom Form ***************************/
 
 #form-mobile {
   display: flex;
 }
 
 .head-main {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.shipping,
+.filter {
+  width: 25%;
+}
+
+.heading {
+  width: 50%;
 }
 
 .form-create-soap-mobile {
@@ -543,9 +558,6 @@ a.pro-home:hover {
 }
 
 .list-items .arrows {
-  /* background-color: var(--dark-green);
-  padding: var(--ps);
-  border-radius: var(--border-radius); */
   margin-bottom: 3rem;
 }
 
@@ -580,7 +592,6 @@ a.pro-home:hover {
 .cost {
   display: flex;
   flex-flow: column;
-  /* padding: var(--plr); */
   margin: var(--mtb-large);
   width: 100%;
 }
@@ -591,7 +602,6 @@ a.pro-home:hover {
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid var(--black);
-  /* margin: var(--mtb); */
   padding: var(--ptb);
 }
 
@@ -639,7 +649,104 @@ a.pro-home:hover {
   display: none;
 }
 
-/***************************************/
+/***********  Mobile Product.html page **********************/
+
+.product-description-product-page {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.custom-image img {
+  width: 100%;
+}
+
+.ingredients-product {
+  display: flex;
+  flex-flow: column;
+  padding: var(--p);
+}
+
+.description {
+  margin: var(--mtb-large);
+  padding: var(--p);
+}
+
+/*****************  Mobile Sustainability icons Create Soap and Products pages *****************/
+
+#sustainability {
+  background-color: var(--green);
+}
+
+.icons-sustainability {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.icon {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.icons-sustainability .icon {
+  /* width: 70%; */
+  display: flex;
+  flex-direction: column;
+  padding: var(--p);
+  align-items: center;
+  text-align: center;
+}
+
+.icons {
+  /* background-color: var(--white); */
+  padding: var(--p);
+}
+
+.icons-sustainability .icon h2 {
+  margin: var(--mtb-large);
+  color: var(--black);
+}
+
+.icons-sustainability .icon img {
+  width: 4rem;
+  max-width: 100%;
+  border-radius: 100%;
+  border: 2px solid var(--black);
+  background-color: var(--white);
+}
+
+/******************** Mobile Shop  *************************************/
+
+#shop-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-items: baseline;
+  gap: 4rem;
+  padding: var(--p);
+}
+
+.soap-image {
+  width: 100%;
+}
+
+.price-addto-card {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/********************  Mobile Footer **************************************/
 
 footer {
   grid-column: 1 / -1;
@@ -667,7 +774,7 @@ footer .logo,
   align-items: baseline;
   text-align: center;
   padding: var(--p);
-  margin: var(--ptb-xxl);
+  margin: var(--ptb-large);
   width: 100%;
   gap: 4rem;
 }
@@ -750,6 +857,7 @@ footer ul {
     border-bottom: 0px;
     display: inline;
     padding: var(--p);
+    margin: var(--mlr);
   }
 
   #menu li a.menu:link,
@@ -796,6 +904,12 @@ footer ul {
     margin: 0 auto;
   }
 
+  section {
+    padding: var(--ptb-large);
+  }
+
+  /************ Desktop Create Soap*******************************/
+
   .products {
     width: 100%;
     margin: var(--mtb);
@@ -832,7 +946,7 @@ footer ul {
     width: 50%;
   }
 
-  /************************************/
+  /************** Desktop Intagram **********************/
 
   .insta-social {
     flex-direction: column;
@@ -849,7 +963,17 @@ footer ul {
     max-width: 20%;
   }
 
-  /**************************/
+  /*******************Desktop headders *******************/
+
+  .head-main {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  /******************  Desktop Footer *****************/
 
   .footer {
     display: flex;
@@ -870,7 +994,7 @@ footer ul {
     margin-top: 0;
   }
 
-  /*********************/
+  /******************* Desktop Create Soap Html *********************/
 
   #form-mobile {
     display: none;
@@ -893,12 +1017,9 @@ footer ul {
   }
 
   .custom-image,
-  .custom-properties {
+  .custom-description,
+  .description {
     width: 50%;
-  }
-
-  .custom-image img {
-    width: 100%;
   }
 
   .list-items,
@@ -938,9 +1059,6 @@ footer ul {
     width: 100%;
     flex-flow: row;
     justify-content: space-between;
-    /* background-color: #0f282f; */
-    /* opacity: 0.5; */
-    /* margin: var(--mlr); */
   }
 
   .color,
@@ -961,6 +1079,24 @@ footer ul {
     right: 0;
   }
 
+  /***********  Desktop Product.html page > Using Create Soap **********************/
+
+  #product {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .product-description-product-page {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    gap: 4rem;
+  }
+
   .name-price {
     margin: var(--mtb-large);
   }
@@ -971,19 +1107,47 @@ footer ul {
   }
 
   .price {
-    font-family: var(--font-t);
+    font-family: var(--font-h);
     margin: var(--mtb-large);
     height: fit-content;
   }
 
-  .price,
-  .name {
-    /* font-weight: 700; */
-  }
-
-  .ingredients-soap {
+  .ingredients-product {
     display: flex;
     flex-flow: column;
-    /* gap: 0.5rem; */
+  }
+
+  .icons-sustainability {
+    flex-direction: row;
+  }
+
+  /***************** Desktop Shop Page ***********************************/
+
+  #product-shop {
+  }
+
+  #shop-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: row;
+    justify-content: center;
+    align-items: baseline;
+    gap: 4rem;
+  }
+
+  #cartTemplate {
+    display: flex;
+  }
+
+  .soap-image {
+    width: 100%;
+  }
+
+  .price-addto-card {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
 }
