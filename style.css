@@ -21,6 +21,7 @@
   --m: 1rem;
   --ms: 0.5rem;
   --p: 1rem;
+  --p-large: 1.5rem 3rem;
   --ps: 0.5rem;
   --mtb: 1rem 0;
   --mtb-large: 2rem 0;
@@ -44,10 +45,23 @@ h1,
 h2,
 h3 {
   font-family: var(--font-h);
+  line-height: normal;
 }
 
 p {
   font-family: var(--font-t);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 body {
@@ -220,13 +234,14 @@ button {
   background-color: var(--dark-green);
   border: none;
   color: var(--white);
-  padding: 10px 17px;
+  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   letter-spacing: 0.1rem;
   border-radius: var(--border-radius-100);
   cursor: pointer;
+  margin: var(--mtb-large);
 }
 
 .product button {
@@ -280,10 +295,6 @@ section {
 }
 
 section h2 {
-  margin-bottom: 2rem;
-}
-
-section p {
   margin-bottom: 2rem;
 }
 
@@ -498,8 +509,8 @@ a.pro-home:hover {
   padding: 0;
   margin: var(mtb);
   display: flex;
-  justify-content: space-around;
-  align-items: baseline;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .item {
@@ -512,7 +523,7 @@ a.pro-home:hover {
 .icon-item,
 .icon-text {
   padding: var(--p);
-  width: 48px;
+  width: 28px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -523,7 +534,7 @@ a.pro-home:hover {
   background-color: var(--dark-green);
   color: var(--white);
   border-radius: var(--border-radius);
-  height: 48px;
+  height: 28px;
 }
 
 .icon-text {
@@ -535,7 +546,7 @@ a.pro-home:hover {
   /* background-color: var(--dark-green);
   padding: var(--ps);
   border-radius: var(--border-radius); */
-  margin: var(--mb);
+  margin-bottom: 3rem;
 }
 
 .color-shape {
@@ -569,7 +580,7 @@ a.pro-home:hover {
 .cost {
   display: flex;
   flex-flow: column;
-  padding: var(--plr);
+  /* padding: var(--plr); */
   margin: var(--mtb-large);
   width: 100%;
 }
@@ -589,6 +600,7 @@ a.pro-home:hover {
   flex-flow: row;
   margin: var(--mtb);
   gap: 0.5rem;
+  line-height: 0;
 }
 
 .plus,
@@ -614,7 +626,9 @@ a.pro-home:hover {
 }
 
 .add-to-cart {
-  padding: var(--p);
+  padding: var(--p-large);
+  /* font-size: medium; */
+  margin: var(--mt);
 }
 
 #form-mobile {
@@ -769,7 +783,9 @@ footer ul {
 
   button {
     padding: 15px 32px;
-    font-size: 1rem;
+    font-size: medium;
+    text-transform: uppercase;
+    margin: var(--mtb-large);
   }
 
   .container {
@@ -872,6 +888,10 @@ footer ul {
     width: 100%;
   }
 
+  .ingredients {
+    padding: 0;
+  }
+
   .custom-image,
   .custom-properties {
     width: 50%;
@@ -885,6 +905,23 @@ footer ul {
   .list-experiences,
   .list-color-shape {
     margin: var(--mtb-large);
+  }
+
+  .icon-item,
+  .icon-text {
+    padding: var(--p);
+    width: 48px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon-item {
+    background-color: var(--dark-green);
+    color: var(--white);
+    border-radius: var(--border-radius);
+    height: 48px;
   }
 
   .list-experiences li {
@@ -922,5 +959,31 @@ footer ul {
 
   .shape {
     right: 0;
+  }
+
+  .name-price {
+    margin: var(--mtb-large);
+  }
+
+  .name {
+    font-family: var(--font-h);
+    height: fit-content;
+  }
+
+  .price {
+    font-family: var(--font-t);
+    margin: var(--mtb-large);
+    height: fit-content;
+  }
+
+  .price,
+  .name {
+    /* font-weight: 700; */
+  }
+
+  .ingredients-soap {
+    display: flex;
+    flex-flow: column;
+    /* gap: 0.5rem; */
   }
 }
