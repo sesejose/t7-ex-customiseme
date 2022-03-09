@@ -209,12 +209,14 @@ a.mainmenu:active {
 }
 
 .hero {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
   background-color: var(--middle_green);
   width: 100%;
   height: auto;
   display: flex;
   flex-flow: row;
-  background-image: url("../images/create-soap-home.jpg");
+  background-image: url(images/bg.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -373,7 +375,7 @@ a.pro-home:hover {
 /******************   Workshops Home   **************************/
 
 #workshops {
-  background-image: url("../images/soap.png");
+  background-image: url(images/soap.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1168,6 +1170,9 @@ footer ul {
   }
 
   /***************** Desktop Shop Page ***********************************/
+
+  #product-shop {
+  }
 
   #shop-grid {
     display: grid;
