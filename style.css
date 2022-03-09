@@ -746,6 +746,36 @@ a.pro-home:hover {
   width: 100%;
 }
 
+/********************  Mobile Notes & Fragances *******************************/
+
+#experiences {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.experience {
+  display: flex;
+  /* flex-flow: row; */
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0;
+}
+
+.experience-img img {
+  width: 50%;
+}
+
+.experience-text {
+  padding: 4rem;
+}
+
+.experience-img,
+.experience-text {
+  width: 50%;
+  margin: var(--xxl);
+}
+
 /********************  Mobile Footer **************************************/
 
 footer {
@@ -931,6 +961,10 @@ footer ul {
 
   .breadcrumb {
     justify-content: flex-start;
+    border-bottom: 1px solid var(--green);
+    /* border-top: 1px solid var(--green); */
+    border-width: thin;
+    padding: var(--ptb);
   }
 
   .create-soap-home {
@@ -973,6 +1007,20 @@ footer ul {
     align-items: center;
     text-align: center;
   }
+
+  /********************  Mobile Notes & Fragances *******************************/
+
+  .experiences {
+    display: flex;
+    /* flex-flow: column; */
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .experience-img img {
+    width: 100%;
+  }
+
   /******************  Desktop Footer *****************/
 
   .footer {
