@@ -1,65 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CustomiseMe</title>
     <link rel="stylesheet" href="css/style.css" />
-</head>
+  </head>
 
-<body class="wrapper">
+  <body class="wrapper">
     <header class="main-container-header header_bg_content">
-        <nav>
-            <div id="logo" class="logo">
-                <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
-            </div>
-            
+      <nav>
+        <div id="logo" class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
+        </div>
 
-            <div class="icons-nav">
+        <div class="icons-nav">
+          <div class="button-nav">
+            <a class="button-nav" href="create-soap.html">Create Soap</a>
+          </div>
 
-                <div class="button-nav">
-                    <a class="button-nav" href="create-soap.html">Create Soap</a>
-                </div>
+          <div class="cart">
+            <a class="icon">
+              <img src="images/bag.svg" alt="Ivon Menu" />
+            </a>
+          </div>
 
-                <div class="cart">
-                    <a class="icon">
-                        <img src="images/bag.svg" alt="Ivon Menu" />
-                    </a>
-                </div>
+          <div class="hamburger">
+            <a class="icon" onclick="openmenumobile()">
+              <img src="images/bars-solid.svg" alt="Icon Menu" />
+            </a>
+          </div>
+        </div>
 
-                <div class="hamburger">
-                    <a class="icon" onclick="openmenumobile()">
-                        <img src="images/bars-solid.svg" alt="Icon Menu" />
-                    </a>
-                </div>
-            </div>
+        <ul id="mainmenu">
+          <!--Mobile-->
+          <li><a href="shop.html" class="mainmenu">Shop</a></li>
+          <li><a href="workshops.html" class="mainmenu">Workshops</a></li>
+          <li>
+            <a href="notes-fragances.html" class="mainmenu"
+              >Notes & Fragances</a
+            >
+          </li>
+          <li><a href="about.html" class="mainmenu">About</a></li>
+          <li><a href="create-soap.html" class="mainmenu">Create soap</a></li>
+          <li><a href="cart.html" class="mainmenu">Cart</a></li>
+        </ul>
 
-            <ul id="mainmenu"><!--Mobile-->
-                <li><a href="shop.html" class="mainmenu">Shop</a></li>
-                <li><a href="workshops.html" class="mainmenu">Workshops</a></li>
-                <li><a href="notes-fragances.html" class="mainmenu">Notes & Fragances</a></li>
-                <li><a href="about.html" class="mainmenu">About</a></li>
-                <li><a href="create-soap.html" class="mainmenu">Create soap</a></li>
-                <li><a href="cart.html" class="mainmenu">Cart</a>
-                </li>
-            </ul>
+        <ul id="menu">
+          <!--Desktop-->
+          <li><a href="shop.html" class="menu">Shop</a></li>
+          <li><a href="workshops.html" class="menu">Workshops</a></li>
+          <li>
+            <a href="notes-fragances.html" class="menu">Notes & Fragances</a>
+          </li>
+          <li><a href="about.html" class="menu">About</a></li>
+          <li><a class="button" href="create-soap.html">Create soap</a></li>
+          <li>
+            <a href="cart.html" class="menu">
+              <img src="images/bag.svg" alt="Icon Menu"
+            /></a>
+          </li>
+        </ul>
+      </nav>
 
-            <ul id="menu"><!--Desktop-->
-                <li><a href="shop.html" class="menu">Shop</a></li>
-                <li><a href="workshops.html" class="menu">Workshops</a></li>
-                <li><a href="notes-fragances.html" class="menu">Notes & Fragances</a></li>
-                <li><a href="about.html" class="menu">About</a></li>
-                <li><a class="button" href="create-soap.html">Create soap</a></li>
-                <li>
-                    <a href="cart.html" class="menu">
-                        <img src="images/bag.svg" alt="Icon Menu" /></a>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- <div class="w100 hero">
+      <!-- <div class="w100 hero">
             <div class="container hero-text">
                 <h1>Headline</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -67,134 +72,146 @@
             </div>
         </div> -->
 
-        </div>
-
-        <!-- <div id="overlay" class="w100"></div> -->
+      <!-- <div id="overlay" class="w100"></div> -->
     </header>
 
     <main>
-
-        <section class="">
-            <div class="container">
-                <div class="head-main">
-                    <div class="heading">
-                        <div><h1>Soap</h1></div>
-                        <!-- <div><p>Find the right essential oil to your soap before starting customising.</p></div> -->
-                        <!-- <div><button>Essential Oils</button></div> -->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="product">
-            <div class="container">
-                <div class="product-description-product-page">
-
-                    <div class="custom-image">
-                        <img src="images/custom-soap.jpg" alt="soap">               
-                    </div>
-
-                    <div class="description">
-
-                        <div>
-                            <div class="name-price">
-                                <h2 class="name">Energizing soap</h2>
-                                <h1 class="price">DKK 55,00</h1>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <div class="ingredients-product">
-                                <h3>Ingredients</h3>
-                                <h4>Oils and Butters</h4>
-                                <p>Coconut oil* (Cocos Nucifera oil), Olive oil* (Olea Europaea oil), Shea butter* (Butyrospermum Parkii), Distilled water. Their individual benefits you can review in our notes and fragances page.</p>
-                                <h4>Essential Oils</h4>
-                                <p>Bergamot (Citrus Aurantium Bergamia)* and Rosemary (Rosmarinus Officinalis)*.</p>
-                                <p>Color: Purple Passion. INCI CI 77019, CI 77891, CI 77491, CI 77742.</p>
-                                <p>*Certified Organic product</p>
-                                <p>Weight: approx. 88gr</p>
-                                <p> Availability: In stock </p>
-                            </div>
-                        </div>
-    
-                        <div>
-                            <div class="cost">
-                                <div class="rows-cost">
-                                    <div>Amount</div>
-                                    <div class="minimun">
-                                        <div class="plus"><img src="images/plus.svg" alt=""></div>
-                                        <div class="field">4</div>
-                                        <div class="minus"><img src="images/dash.svg" alt=""></div>
-                                    </div>
-                                </div>
-    
-                                <div class="rows-cost align-right">
-                                    <div class="w100"><button type="button" class="add-to-cart">ADD TO CART</button></div>
-                                </div>
-                            </div><!-- Cost ends -->
-                        </div>
-                    </div>
-                    
-                    
-
-                    
-                    
-                </div><!--Form mobile ends-->
-            </div> <!--Container ends-->
-        </section>
-
-        
-
-    </main>
-    
-    <footer>
+      <section class="">
         <div class="container">
-            <div class="footer">
+          <div class="head-main">
+            <div class="heading">
+              <div><h1>Soap</h1></div>
+              <!-- <div><p>Find the right essential oil to your soap before starting customising.</p></div> -->
+              <!-- <div><button>Essential Oils</button></div> -->
+            </div>
+          </div>
+        </div>
+      </section>
 
-                
-                <div class="logo">
-                    <!-- <h3>Logo</h3> -->
-                    <img src="images/logo.png" alt="Logo">
-                    <p>Co-creating with your requests, needs and wishes in mind.</p>
+      <section id="product">
+        <div class="container">
+          <div class="product-description-product-page">
+            <div class="custom-image">
+              <img src="images/custom-soap.jpg" class="soap-image" alt="soap" />
+            </div>
+
+            <div class="description">
+              <div>
+                <div class="name-price">
+                  <h2 class="name"></h2>
+                  <h1 class="price"></h1>
                 </div>
+              </div>
 
-
-                <div class="contact">
-                    <h3>Contact</h3>
-                    <ul>
-                        <li>CustomizeMe ApS</li>
-                        <li>Falen 21D,2TV 5000 Odense C</li>
-                        <li>info@customizeme.dk</li>
-                        <li>CVR: 42657603</li>
-                    </ul>
+              <div>
+                <div class="ingredients-product">
+                  <h3>Ingredients</h3>
+                  <h4>Oils and Butters</h4>
+                  <p class="oils-butter"></p>
+                  <p>
+                    Coconut oil* (Cocos Nucifera oil), Olive oil* (Olea Europaea
+                    oil), Shea butter* (Butyrospermum Parkii), Distilled water.
+                    Their individual benefits you can review in our notes and
+                    fragances page.
+                  </p>
+                  <h4>Essential Oils</h4>
+                  <p class="essential"></p>
+                  <p>
+                    Bergamot (Citrus Aurantium Bergamia)* and Rosemary
+                    (Rosmarinus Officinalis)*.
+                  </p>
+                  <p class="soap-color"></p>
+                  <p>*Certified Organic product</p>
+                  <p class="soap-weight"></p>
+                  <p>Availability: In stock</p>
                 </div>
+              </div>
 
-                <ul class="footer-menu"><!--Mobile-->
-                    <li><a href="shop.html" class="footer-menu">Shop</a></li>
-                    <li><a href="workshops.html" class="footer-menu">Workshops</a></li>
-                    <li><a href="notes_fragances.html" class="footer-menu">Notes & Fragances</a></li>
-                    <li><a href="about.html" class="footer-menu">About</a></li>
-                    <li><a href="create-soap.html" class="footer-menu">Create soap</a></li>
-                    <li><a href="cookies-privacy-policy.html" class="footer-menu">Cookie & Privacy Policy</a>
-                    </li>
-                </ul>
+              <div>
+                <div class="cost">
+                  <div class="rows-cost">
+                    <div>Amount</div>
+                    <div class="minimun">
+                      <div class="plus">
+                        <img src="images/plus.svg" alt="" />
+                      </div>
+                      <div class="field">4</div>
+                      <div class="minus">
+                        <img src="images/dash.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
 
-
-                <div class="social">
-                    <h3>Follow us</h3>
-                <div>
-                    <img src="images/facebook.svg" alt="">
-                    <img src="images/instagram.svg" alt="">
+                  <div class="rows-cost align-right">
+                    <div class="w100">
+                      <button type="button" class="add-to-cart">
+                        ADD TO CART
+                      </button>
+                    </div>
+                  </div>
                 </div>
-                </div>
-        
-        </div><!-- ".footer" ends-->
-    </div> <!--Container ends-->
-    
-</footer>
+                <!-- Cost ends -->
+              </div>
+            </div>
+          </div>
+          <!--Form mobile ends-->
+        </div>
+        <!--Container ends-->
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="logo">
+            <!-- <h3>Logo</h3> -->
+            <img src="images/logo.png" alt="Logo" />
+            <p>Co-creating with your requests, needs and wishes in mind.</p>
+          </div>
+
+          <div class="contact">
+            <h3>Contact</h3>
+            <ul>
+              <li>CustomizeMe ApS</li>
+              <li>Falen 21D,2TV 5000 Odense C</li>
+              <li>info@customizeme.dk</li>
+              <li>CVR: 42657603</li>
+            </ul>
+          </div>
+
+          <ul class="footer-menu">
+            <!--Mobile-->
+            <li><a href="shop.html" class="footer-menu">Shop</a></li>
+            <li><a href="workshops.html" class="footer-menu">Workshops</a></li>
+            <li>
+              <a href="notes_fragances.html" class="footer-menu"
+                >Notes & Fragances</a
+              >
+            </li>
+            <li><a href="about.html" class="footer-menu">About</a></li>
+            <li>
+              <a href="create-soap.html" class="footer-menu">Create soap</a>
+            </li>
+            <li>
+              <a href="cookies-privacy-policy.html" class="footer-menu"
+                >Cookie & Privacy Policy</a
+              >
+            </li>
+          </ul>
+
+          <div class="social">
+            <h3>Follow us</h3>
+            <div>
+              <img src="images/facebook.svg" alt="" />
+              <img src="images/instagram.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- ".footer" ends-->
+      </div>
+      <!--Container ends-->
+    </footer>
     <script src="js/functions.js"></script>
-</body>
-
+    <script src="js/product-details.js"></script>
+  </body>
 </html>
-
-

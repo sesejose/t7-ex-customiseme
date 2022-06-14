@@ -1,8 +1,8 @@
 function openmenumobile() {
   var x = document.getElementById("mainmenu");
-  if (x.style.display !== "none") {
-    x.style.display = "none";
-  } else {
+  if (x.style.display !== "inline-grid") {
     x.style.display = "inline-grid";
+  } else {
+    x.style.display = "none";
   }
 }

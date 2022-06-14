@@ -25,11 +25,8 @@ function showSoap(soap) {
   const copy = template.cloneNode(true);
   copy.querySelector(".soap-name").textContent = soap.name;
   copy.querySelector(".soap-image").textContent = soap.image;
-
   copy.querySelector(".soap-price").textContent = soap.price + " " + "DDK";
-  /*     copy.querySelector(
-                              ".soap-image"
-                          ).src = `http://gareth.dk/data/${soap.id}.jpeg`; */
+  copy.querySelector(".soap-image").src = soap.imageurl;
   copy.querySelector("a").setAttribute("href", `product.html?id=${soap._id}`);
   const parent = document.querySelector("#shop-grid");
   parent.appendChild(copy);
